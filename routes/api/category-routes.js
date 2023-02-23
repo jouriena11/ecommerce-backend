@@ -60,15 +60,14 @@ router.post("/", async (req, res) => {
 // PUT request - update category by ID
 router.put("/:id", async (req, res) => {
   try {
-    const updatedCategory = await Category.update(
+    const [updatedCategory] = await Category.update( // destructure returned data which is an array type
       {
         category_name: req.body.category_name,
       },
       {
         where: {
           id: req.params.id,
-        },
-        returning: true,
+        }
       }
     );
 
@@ -81,7 +80,7 @@ router.put("/:id", async (req, res) => {
 
     res.status(200).json({
       message: "Category updated successfully.",
-      rows_updated: updatedCategory[1], // TODO: why must an index be included?
+      rows_updated: updatedCategory,
     });
   } catch (err) {
     res.status(400).json(err);

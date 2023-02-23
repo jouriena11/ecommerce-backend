@@ -58,7 +58,7 @@ router.post('/', async (req, res) => {
 // PUT request - update a tag's name by its `id`
 router.put('/:id', async (req, res) => {
   try {
-    const [rowsUpdated] = await Tag.update(
+    const [rowsUpdated] = await Tag.update( // destructuring returned data which is an array type
       {
         tag_name: req.body.tag_name,
       },
@@ -77,8 +77,8 @@ router.put('/:id', async (req, res) => {
     }
 
     res.status(200).json({
-      message: "Tag updated successfully."
-      // TODO: what other information can be sent?
+      message: "Tag updated successfully.",
+      rows_updated: rowsUpdated
     })
 
   } catch(err) {
@@ -103,8 +103,8 @@ router.delete('/:id', async (req, res) => {
     }
 
     res.status(200).json({
-      message: "Tag deleted successfully."
-      // TODO: what other information can be sent?
+      message: "Tag deleted successfully.",
+      rows_updated: deletedTag
     })
   } catch(err) {
     res.status(500).json(err);

@@ -32,7 +32,7 @@ All the HTTP requested data would be returned in JSON format.
 
 ---
 ## **URLs**
-- [Walkthrough Video]()
+- [Walkthrough Video](https://drive.google.com/file/d/1pSQ4lzg8bh-9BGSdxYVT76bKmOLg3ZQ_/view?usp=sharing)
 - [GitHub Repository URL](https://github.com/jouriena11/ecommerce-backend)
 
 ---
