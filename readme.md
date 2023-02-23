@@ -9,13 +9,11 @@ This is an eCommerce backend application that allows users to perform the follow
     * GET all tags data via `/api/tags` endpoint
     * GET all products data via `api/products` endpoint
 <br>
-<br>
 
 * **POST requests** 
     * Use data from `req.body` to create a new category via `/api/categories` endpoint
     * Use data from `req.body` to create a new tag via `/api/tags` endpoint
     * Use data from `req.body` to create a new product via `/api/products` endpoint
-<br>
 <br>
 
 * **PUT requests**
@@ -23,12 +21,12 @@ This is an eCommerce backend application that allows users to perform the follow
     * Use data from `req.body` to update the `tag_name` of a specific category ID, and send the update request to the `api/tags` endpoint.
     * Use data from `req.body` to update the `product_name` of a specific category ID, and send the update request to the `api/products` endpoint.
 <br>
-<br>
 
 * **DELETE requests**
     * delete a category of a specific category ID via `/api/categories` endpoint
     * delete a tag of a specific category ID via `/api/tags` endpoint
     * delete a product of a specific category ID via `/api/products` endpoint
+<br>
 
 All the HTTP requested data would be returned in JSON format.
 
