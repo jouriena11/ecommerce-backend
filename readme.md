@@ -40,7 +40,7 @@ All the HTTP requested data would be returned in JSON format.
 - <a href="#installation">Installation</a>
 - <a href="#technologies-used">Technologies Used</a>
 - <a href="#usage">Usage</a>
-- <a href="#future-developments">Future Developments</a>
+- <a href="#future-development">Future Developments</a>
 
 ---
 ## **Installation**
@@ -57,7 +57,7 @@ npm i
 
 ---
 ## **Technologies Used**
-- JavaScript / OOP
+- JavaScript
 - Node.js
 - MySQL
 - Express.js
@@ -80,5 +80,5 @@ Then open Insomnia application to perfrom GET, POST, PUT, DELETE requests.
 To exit the application, press CTRL+c on the keyboard.
 
 ---
-## **Future Developments**
-- to include bulk edit
+## **Future Development**
+- to create a frontend interface for this backend API functionalities, replacing Insomnia application in performing HTTP requests
